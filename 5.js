@@ -16,6 +16,7 @@ fs.readdir(arg, function(err, files){
 	if(err) throw err;
 
 	for(i = 0; i <= files.length - 1; i++){
+		console.log(path.extname(files));
 		if(path.extname(files[i]) === exten){
 			console.log(files[i]);
 		} 
